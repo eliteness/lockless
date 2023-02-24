@@ -1,0 +1,1113 @@
+<!doctype html><html><meta charset="UTF-8">
+<head>
+<title>Stake SWKAVA/KAVA on Lockless Protocol | Guru Netowork</title>
+<meta name="description" content="Stake SWKAVA/KAVA on Lockless Protocol to Earn KAVA, SWKAVA, OSMO, USDC & more!">
+<meta name="keywords" content="Lockless Protocol, Guru Network, Decentralized Finance, Kava, Liquid Staking, 1337, defi, farming, FTM1337">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="shortcut icon" href="https://ftm.guru/icons/lockless.svg">
+<style>
+*{color:#e3e9f2;overflow-wrap:break-word;}
+a{text-decoration-line:none;padding:0 2px}
+html{background:#020611;color:#e3e9f2;font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif}
+img {border-radius: 50%;}
+.mainstages img {display: inline-block;vertical-align: middle;}
+input,button{border-radius:25px;background:black;text-align:center;}
+button:hover{  box-shadow: 0 0px 10px 5px rgba(255,255,255,.2), 0px 0px 10px 5px rgba(255,255,255,0.1);transition: 0.2s}
+pre{overflow-x:auto;max-width:80%}
+#votingmvg{background:#040b22;border-radius:20px;border: #aaa solid 1px}
+.topbar{display:grid;grid-template-columns: auto;}
+#mvg pre{margin: 0 0 0 0;}
+#mvg hr{border: 0px dashed;width: 50%}
+#mvg div{background: #000013;margin: auto;border-radius: 15px;border:dashed 1px;border-top: none }
+	#mvg{width: 70vw}
+.mainpanels{display:grid;grid-template-columns:auto}
+.olsa{display:grid;grid-template-columns:auto auto 1%;}
+.mainstages{text-align:center;display:grid;grid-template-columns:auto auto auto}
+.mainstage{padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;margin:5%;border-radius: 15px;border:aqua 2px solid}
+#createnewfarm{font-size:1.5em}
+#searchforafarm{font-size:1.1em;border-radius:10px;width:75%}
+.farmcontrols{background: rgba(0,255,255,0.5);font-size:1em;padding:10px;width:140px;margin:5px}
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+.lpapr{text-shadow: rgba(0,255,255,1) 0px 0px 10px;color:aqua;font-size:2em}
+.notice{font-weight: bold;font-size: 1.25em;margin:10%;background: #000;border-radius: 20px;padding:2%;border:5px dashed}
+hr{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;border-radius: 15px;border:aqua 2px solid;}
+.mainstage:nth-child(2){background-image: url("../img/bg-sun.jpg");background-size: 100%;background-repeat: no-repeat ;color:#020611;text-shadow: 0 0 2px black;}
+.mainstage:nth-child(2) span{background: rgba(9,9,32,0.5);border-bottom:1px dotted aqua ;}
+.mainstage:nth-child(2) h4,.mainstage:nth-child(2) h3{background: rgba(9,9,32,0.5);width:max-content;border:1px double aqua;border-radius: 20px;padding: 5px}
+.mainstage:nth-child(2) span:nth-child(){border:none}
+/*.mainstage:nth-child(1),
+.mainstage:nth-child(2),
+.mainstage:nth-child(4),
+.mainstage:nth-child(5)
+{background: #111;border:none}
+.mainstage:nth-child(1) button,
+.mainstage:nth-child(2) button,
+.mainstage:nth-child(4) button,
+.mainstage:nth-child(5) button
+{color:grey;background: black}
+*/
+#reffar{line-height: 1em}
+#ff{  font-family: 'Courier New', "Lucida Console", Monaco,"FreeMono","Andale Mono", monospace;color:cyan}
+.fardet span:nth-of-type(5n+2){text-align: left}
+.fardet span:nth-of-type(5n+4){text-align: right}
+input{background: #000 !important;}
+.advert{background: linear-gradient(45deg, rgba(255,0,0,0.25), rgba(0,0,255,0.25));padding:15px}
+#fdet{display:grid;grid-template-columns:auto auto auto;max-width:280px}
+#fdet span:nth-of-type(3n+1){text-align:right}
+#fdet span:nth-of-type(3n){text-align:left;font-weight:bold}
+.lowercat {text-align: left;padding:10px}
+.lowercat a{text-decoration-line: none}
+.lowercat span{font-size: 1.25em; font:weight:bold}
+.lowerbar{display: grid;grid-template-columns: auto;text-align:center}
+@media(min-width:641px){
+	.mainpanels{grid-template-columns:50% 50%}
+	.mainstages{grid-template-columns:auto auto auto}
+	#mvg{width: 70%;}
+	.hhr{width:555px}
+	.lowerbar{display: grid;grid-template-columns: auto auto auto auto;text-align:center}
+}
+#c2a{
+	display: grid;
+	grid-template-columns: auto;
+}
+.c2a{
+	border: 2px solid ;
+	width:220px;
+	margin: auto;
+	padding:5px;
+	margin: 5px auto;
+	background: rgba(0,255,255,0.2);
+	border-radius: 10px;
+	cursor:  grab;
+}
+.c2a:hover{box-shadow: rgba(0,255,195,0.2) 0px 0px 10px 10px;}
+@media(min-width:641px){
+	#c2a{
+		display: grid;
+		grid-template-columns: auto 280px 280px auto;
+	}
+	.topbar{font-size:1.5em}
+	.topbar a{margin-right: 12px}
+}
+html{background-image:url('img/'); background-size: 100%; background-attachment: fixed;/*:#020611*/;color:#e3e9f2;font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif}
+.mainpanel,.mainstage{background: rgba(15,15,31,0.5);}
+*{text-shadow:6px 6px 5px black;color:#e3e9f2}
+#switch {display:none;border:none}
+#cw_m{color: #f23;font-weight: bold;text-shadow: 1px 1px 5px rgba(255,127,127,0.5)}
+@font-face{font-family:bold;src: url(https://ftm.guru/font/bold.ttf);}
+@font-face{ font-family:italic;src: url(https://ftm.guru/font/italic.ttf);}
+@font-face{ font-family:light;src: url(https://ftm.guru/font/light.ttf);}
+@font-face{ font-family:light_italic;src: url(https://ftm.guru/font/light_italic.ttf);}
+@font-face{ font-family:regular;src: url(https://ftm.guru/font/regular.ttf);}
+@font-face{ font-family:regular_italic;src: url(https://ftm.guru/font/regular_italic.ttf);}
+*{font-family:regular;}
+*{
+scroll-behavior: smooth !important;
+}
+
+
+thead td{font-family: bold}
+table{ border: 1px dashed white;border-radius: 20px;padding: 10px;}
+thead{}
+td{text-align: center}
+tr td:nth-child(4){text-align: left}
+tbody tr td:nth-child(2){border-radius: 20px;padding: 0 8px;text-shadow:none}
+.elgr td:nth-child(2){background: aqua;color:navy;}
+.elwd td:nth-child(2){background: red;}
+.elst td:nth-child(2){background: #0f0;color:navy;}
+td a{text-decoration: 2px underline dotted #f0f}
+</style>
+</head>
+<div class="topbar">
+	<div align="center">
+		<img src="https://ftm.guru/icons/lockless.svg" style="position: relative;top: ;border-radius: initial;" width="48px">
+		<a href="../index.html"><b style="font-size:2em">Lockless Protocol</b></a><br><br>
+		<!--<a href="../LF/index.html">Lite Farmlands👽</a>-->
+		<a href="#step1">💉Mint</a>
+		<a href="#step2">🌾Stake</a>
+		<a href="https://abcdefx.eliteness.network/#/swap">💹Trade</a>
+		<a href="https://abcdefx.eliteness.network/#/pool">🔎Pool</a>
+	</div>
+</div>
+<br>
+<br>
+<hr class="hhr">
+<br>
+<br>
+<div align="center">
+	<div id="connect">
+		Please connect your web3 wallet.
+		<br>
+		<button onclick="cw()" id="btn-connect" class="farmcontrols">Connect</button>
+	</div>
+	<span id="cw_m"></span>
+	<div id="switch">
+		A web3 wallet is now connected.<br>
+		<span id="cw"></span> <button onclick="cw()" id="btn-switch">Switch?</button>
+	</div>
+</div>
+<br><br><br><br>
+<div align="center" id="step1">
+<h1 align="center">Step 1.</h1>
+<h2 align="center">Mint SWKAVA by Locking KAVA</h2>
+
+<div id="fdet"  style="">
+<span>To Lock:</span><span></span><span> KAVA</span>
+<span>Receive:</span><span></span><span> SWKAVA</span>
+<span>Platform:</span><span></span><span> Lockless Protocol</span>
+<span>Fees:</span><span></span><span> 0.00%</span>
+</div>
+</div>
+<br><br>
+<div class="mainstages" align="center">
+	<div></div>
+	<div class="mainstage" style="" align="center">
+		<div class="">
+			<h3 style="font-size:1.5em;">Deposit Native KAVA<br>(Native Kava Coin)</h3>
+			<img src="https://ftm.guru/icons/kava.svg" style="width:64px;">
+			<b style="position:relative;top:0.33em;left:;font-size:2em"> ⇢ </b>
+			<img src="https://ftm.guru/icons/swkava.svg" style="width:64px; border-radius:0">
+			<br><br>
+			<div class="fardet" style="font-size:1.5em;font-weight:bolder;display:grid;grid-template-columns:auto auto auto auto auto">
+				<span></span><span id="">Asset</span>
+				<span></span><span>Balance</span><span></span>
+				<span></span><span id="mint_bal_coin">0</span>
+				<span></span><span>KAVA</span><span></span>
+				<span></span><span id="mint_bal_itoken">0</span>
+				<span></span><span>iKAVA</span><span></span>
+				<span></span><span id="mint_bal_wtoken">0</span>
+				<span></span><span>WKAVA</span><span></span>
+				<span></span><span id="mint_bal_swtoken">0</span>
+				<span></span><span>SWKAVA</span><span></span>
+			</div>
+			<br><button style="font-size: 1em" id="refresh_mint_bal" onclick="gub_mint();guh();">↺ Reload Balances</button><br>
+			<br><hr>
+		</div>
+		<br>
+		<div id="#mint_div">
+			Mint SWKAVA by locking KAVA<br>
+			<input class="farmcontrols farm_i farm_input_deposit" value="" placeholder="Amount to Lock" id="mint_amt"><br>
+			<button class="farmcontrols farm_b farm_approve" onclick="mint_mint()" id="mint_mint">Mint SWKAVA</button><br><br>
+		</div>
+	</div>
+	<div></div>
+</div>
+
+<br><br>
+<div align="center">
+Converting KAVA to SWKAVA is non-reversible.
+<br>All KAVA that are used to mint SWKAVA get locked permanently into Lockless Protocol for Staking with the best Validators.
+<br><br>
+To convert SWKAVA back into KAVA, anyone can Trade it easily on ABcDeFX.<br><br>
+<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button>Trade SWKAVA at ABcDeFx</button></a>
+</div>
+<br><br><br>
+<br><br><br>
+<hr class="hhr">
+<br><br><br>
+<div align="center" id="step2">
+<h1 align="center">Step 2.</h2>
+<h2 align="center">Add SWKAVA with KAVA to Liquidity</h2>
+To start earning Liquid Staking rewards from Lockless Protocol, add SWKAVA with KAVA to Liquidity at the ABcDeFx.<br><br>
+<a href="https://abcdefx.eliteness.network/#/add/NATIVE/0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button style="font-size:1.2em" >Add SWKAVA+KAVA Liquidity</button></a>
+<br><br>
+By adding SWKAVA with KAVA to Liquidity at ABcDeFx, you will receive special "LP Tokens" with the symbol 'ABcDeFx.LP-SWKAVA/WKAVA'.<br>
+These LP tokens need to be staked at final Step 3. to start earning rewards!
+
+<br><br><br>
+<br><br><br>
+<hr class="hhr">
+<br><br><br>
+<div align="center" id="step2">
+<h1 align="center">Step 3.</h2>
+<h2 align="center">Liquid Staking for KAVA</h2>
+<h3>Coming Soon on March 1, 23!</h3>
+Earnings will start on March 1st, 2023 when Round 0 ends and Round 1 begins. Validators can still place bribes to attract stake allocations!
+
+	<br><br>
+	<br><br>
+	<br><br>
+<div style="display:none">
+
+	<div id="fdet"  style="">
+		<span>Deposit:</span><span></span><span> SWKAVA-KAVA LP</span>
+		<span>Rewards:</span><span></span><span> KAVA, SWKAVA, OSMO, USDC</span>
+		<span>Platform:</span><span></span><span> Lockless on ABcDeFx</span>
+		<span>Fees:</span><span></span><span> 0.00%</span>
+	</div>
+	<br><br>
+	<div class="mainstages" align="center">
+		<div></div>
+		<div class="mainstage" style="" align="center">
+			<div class="">
+				<h3 style="font-size:1.5em;">Deposit SWKAVA-KAVA<br>(ABcDeFx LP)</h3>
+				<img src="https://ftm.guru/icons/kava.svg" style="width:32px;">
+				<img src="https://ftm.guru/icons/swkava.svg" style="width:32px;position:relative;left:-16px">
+				<img src="https://ftm.guru/icons/abcdefx.png" style="width:24px;position:relative;left:-24px;top:-24px;border:1px dashed #fff;border-radius:4px">
+				<b style="position:relative;top:;left:-10px">⇢</b>
+				<img src="https://ftm.guru/icons/kava.svg" style="width:32px;">
+				<!--
+				+ <img src="https://ftm.guru/icons/swech.svg" style="width:32px;">
+				+ <img src="https://ftm.guru/icons/usdc.svg" style="width:32px;margin-top:0">
+				-->
+				<br><br>
+				<div class="fardet" style="font-size:1.5em;font-weight:bolder;display:grid;grid-template-columns:auto auto auto auto auto">
+					<span></span><span id="farm_3_i_ys">?</span>
+					<span></span><span>Your Stake</span><span></span>
+					<span></span><span id="farm_3_i_re">?</span>
+					<span></span><span>Earned</span><span></span>
+					<span></span><span id="farm_3_i_apr">?</span>
+					<span></span><span>A.P.R.</span><span></span>
+					<span></span><span id="farm_3_i_tvl">?</span>
+					<span></span><span>T.V.L.</span><span></span><!--
+					<span></span><span id="farm_3_i_roi"></span>
+					<span></span><span></span><span></span>-->
+				</div>
+				<br><button style="font-size: 1em" id="reffar" onclick="refreshFarm()">↺ Reload Stats</button><br>
+				<br><hr>
+			</div>
+			<br>
+			<div id="f1app">
+				<input class="farm_i farm_input_approve" value="Not Approved" disabled="true" id="farm_1_approved"><br>
+				<button class="farmcontrols farm_b farm_approve" onclick="farm_1_f_approve()" id="farm_1_approval">Approve</button><br><br>
+			</div>
+				<div id="farm_1_after" style="display:none">
+
+					Balance: <span class="farm_s farm_s_deposit" id="farm_1_s_deposit" onclick="$('farm_1_input_deposit').value=this.innerHTML">0</span> LP<br>
+					<input class="farmcontrols farm_i farm_input_deposit" value="" placeholder="Deposit Amount" id="farm_1_input_deposit">
+					<button class="farmcontrols farm_b farm_deposit" onclick="farm_1_f_deposit()">Deposit LP</button><br><br>
+
+					<input class="farm_i farm_input_claim" value="Earnings Unknown" disabled="true" id="farm_1_s_claim"> WKAVA<br>
+					<button class="farmcontrols farm_b farm_claim" onclick="farm_1_f_claim()">Claim WKAVA</button><br><br>
+
+					Staked:<span class="farm_s farm_s_deposit" id="farm_1_s_withdraw" onclick="$('farm_1_input_withdraw').value=this.innerHTML">0</span> LP<br>
+					<input class="farmcontrols farm_i farm_input_withdraw" value="" placeholder="Un-Stake Amount" id="farm_1_input_withdraw">
+					<button class="farmcontrols farm_b farm_withdraw" onclick="farm_1_f_withdraw()">Withdraw LP</button><br><br>
+
+					<input class="farm_i farm_input_claim_e" value="Earnings Unknown" disabled="true" id="farm_1_s_claim_e"> WKAVA<br>
+					<input class="farm_i farm_input_claim_s" value="Stake Unknown" disabled="true" id="farm_1_s_claim_s"> LP<br>
+					<button class="farmcontrols farm_b farm_exit" onclick="farm_1_f_exit()">Claim & Exit</button><br>
+
+				</div>
+		</div>
+		<div></div>
+	</div>
+</div>
+<br>
+<br>
+<div align="center" class="advert" style="font-size:1.25em">
+Get SWKAVA
+<pre>0xDf486980Df72446a5efF76263eFb2Fa9391Be136</pre>
+<a href="#mint_div" target="_blank"><button>Mint SWKAVA Directly</button></a>
+<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button>Buy SWKAVA at ABcDeFx</button></a>
+<br><br>SWKAVA is Lockless Staked-Wrapped Kava: a Liquid Staking token.
+<br>SWKAVA is the receipt token for permanently locking KAVA into Lockless Protocol.
+SWKAVA-KAVA Liquidity tokens can be Staked to earn Rewards from Kava Staking.
+Unlike normally staked KAVA coins, the SWKAVA is fully Liquid & can be sold on ABcDeFx anytime for KAVA, and this quality of SWKAVA virtually removes the 21 day locking period.
+All SWKAVA are backed by atleast 1 KAVA, ensuring its hard peg. It trades at the ABcDeFX in a special StablePool to algorithmically balance it's market price.<br><br>
+<a href="https://discord.gg/QpyfMarNrV" target="_blank"><button>Discord</button></a>
+<a href="https://ftm.guru" target="_blank"><button>Website</button></a>
+<a href="https://eliteness.network" target="_blank"><button>List of Dapps</button></a>
+<a href="https://twitter.com/ftm1337" target="_blank"><button>Twitter</button></a>
+<br><br>
+</div>
+<br>
+<br>
+
+<hr class="hhr">
+<div style="overflow:auto" align="center">
+	<div align="center" style="display:none">
+		Dry Date<br>
+		<i id="pf">?</i>
+	</div>
+	<br><br>
+	<h2>Farming History</h2>
+	<div style="
+		border: 1px dashed white;
+		border-radius:20px;
+		margin: auto;
+		max-width: max-content;
+		padding: 20px;
+		display:none;;;;;;;
+	">
+		<span style="font-size;font-size: 1.3em;font-family: bold;">Total Earnings</span><br>
+		<span style="font-size:1.25em" id="totearn">0</span> WKAVA
+	</div>
+	<br><br>
+	<h3>Past Interactions</h3>
+	<button onclick="guh()">Refresh?</button>
+	<br><br>
+	<table>
+		<thead>
+			<tr>
+				<td>TimeStamp</td>
+				<td>Action</td>
+				<td>Currency</td>
+				<td>Amount</td>
+				<td>Explore Txn.</td>
+			</tr>
+		</thead>
+		<tbody id="farmhist">
+		</tbody>
+	</table>
+
+</div>
+
+<br>
+<br>
+<hr class="hhr">
+<h3>Important Addresses</h3>
+<h4>SWKAVA Token</h4>
+0xDf486980Df72446a5efF76263eFb2Fa9391Be136
+<br>Staked-Wrapped Echelon
+<br><br>
+<h4>Locker</h4>
+0x3a0b5a61c4d3cb14e12a87df58fb0ee937125b7d
+<br>kava18g945cwy6093fcf2sl0437cwaym3ykma7phcx3
+<br><br>
+<h4>Vault 1 ⇢ 0 KAVA</h4>
+0x8Ee93a4D658C18Af3679D92E01eD799B9D19Ff31
+<br>kava13m5n5nt93sv27dnemyhqrmtenww3nle3yf96yr
+<br><br>
+
+<div align="center" id="lfs">
+<br><br><br><br>
+<div id="faq">
+<h3>Frequently Asked Questions</h3>
+(Lite Farmlands)
+<br>
+<hr class="hhr">
+<h4>When can we claim rewards?</h4>
+Rewards accrue each block time and are available for claiming instantly. Each deposit and withdraw harvests your crops automatically and sendsthem to your wallet directly.
+
+<!--
+<h4>Are the deposits locked?</h4>
+Deposits can be withdrawn at any time from our regular farms. Special farms can have a pre-defined lockup period. Such farms will be marked with a 🔒 ("Lock Icon"). A withdraw timer for stakers is shown in the Farm-Info section, above the TVL.
+
+
+<h4>What is Eliteness?</h4>
+To farm on the LITE Farmlands, farmers are required to hold a certain minimum amount of ELITE token on Fantom Opera Blockchain.<br>
+
+<h4>Where can we buy ELITE?</h4>
+Discover the best place to Buy ELITE at our <a href="../elite" target="_blank">ELITE market data & analytics</a> page.
+
+-->
+<h4>How long does a farm last?</h4>
+Fields on our LITE Farmlands last forever. Rewards last as long as the community decides to keep funding. Top-ups can be made regularly after a farm dries up to start a new season by anyone. There is a countdown timer reflecting the same at each farm, titled "Dry Date". This duration is specified by the tenants when they first occupy their fields.<br>
+
+<h4>Which tokens & DEX do Farmlands support?</h4>
+We support all DEXes. We support all tokens that implement the standard ERC20 functions. We support single sided staking too.<br>
+</div>
+<div id="lowarea" style="padding:15px; font-size:0.9em">
+<h4>How to create a new Farm?</h4>
+Did you just launch a Token Pair on your favorite DEX and are looking to set up a farm for free? Please contact us on <u><b><a href="https://discord.gg/QpyfMarNrV" target="_blank">Discord.gg/QpyfMarNrV</a></b></u> and type /newFarm to begin the adventure!</div>
+<div id="disclaimer" style="padding:15px; font-size:0.8em">
+<h4>Disclaimer!</h4>
+Anyone can request a farm for free. Guru Network merely provides a platform to host your farm under its Farm-Maker program. Listings are in no manner an endorsement. We do not run background checks and the onus of due dilligence lies on the end-user, you. 99.7% of all projects are scams, rugs, slow-rugs, honeypots or outright lies. Please exercise extreme caution while dealing with smart contracts and crypto assets. We do not take any listing fees for this program and never DM you for personal information or keys.
+</div>
+
+<br>
+<br>
+<div onclick="pantvl()">
+	<span style="font-size:2.5em;font-weight:bold" id="pantvl" class="fore"></span><sup style="font-size:1.2em;position:relative;top: -14px;">⟳</sup><br>
+	Total Value Locked
+</div>
+<br>
+<br>
+<div align="center" class="advert">
+<pre>Join Guru Network</pre>
+<span style="font-size:2em">(🦾,🚀)</span>
+<br><br>
+<div id="c2a">
+	<div class="">
+	</div>
+	<a class="c2a" id="a2m" target="_blank" href="https://twitter.com/FTM1337">
+		Twitter
+	</a>
+	<a class="c2a" id="ibe" target="_blank" href="https://discord.gg/QpyfMarNrV">
+		Discord
+	</a>
+	<div class="">
+	</div>
+</div>
+<br>
+<a href="https://ftm.guru" target="_blank"><button>FTM.Guru</button></a>
+<br><br>
+<a href="https://discord.gg/QpyfMarNrV" target="_blank">To Advertise Here, Contact Us!</a>
+</div>
+<hr>
+
+
+<script src="https://ftm.guru/ethers-5.2.umd.min.js"></script>
+<script>
+GENESIS = 3287000;
+TIME_B0	= 1670580597;
+BLOCK_0 = 3287000;
+BLOCKTIME = 7;//seconds per block
+f_1_add = "0xA254bFD74c38b26145b980162Fb1A49bc0a4f14b";
+pairadd = "0x42fba9c02d5f3dc5596fd77f54c91812403a9d62";
+TEARNED	= ["0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b","0xDf486980Df72446a5efF76263eFb2Fa9391Be136"];
+RPC_URL = "https://evm.kava.io";
+CHAINID = 2222;
+DECIMAL = 18;
+decEARN = 18;
+EXPLORE = "https://explorer.kava.io/";
+EXPLORT = EXPLORE + "tx/";
+EXPLORA = EXPLORE + "address/";
+tsca = "0x5c652a94c672f8f6d021417bb5ee75c322ecf1fc";
+COIN = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+SWTOKEN = "0xDf486980Df72446a5efF76263eFb2Fa9391Be136";
+WTOKEN = "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b";
+iTOKEN = "";
+SWECH = "0xDf486980Df72446a5efF76263eFb2Fa9391Be136";
+WECH = "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b";
+iECH = "";
+
+function $(_) {return document.getElementById(_);}
+let provider= {};
+let signer= {};
+window.addEventListener('load',async function() {
+	console.log("waitin for 3 secs..");
+	$("cw_m").innerHTML = "Connecting.. Please wait."
+	setTimeout(async () => { basetrip(); }, 3000);
+}, false);
+
+async function basetrip()
+{
+//if(window.ethereum&&Number(window.ethereum.chainId)==CHAINID){web3 = new Web3(web3.currentProvider);if(!(window.ethereum.selectedAddress==null)){cw()}}
+
+	if(!(window.ethereum)){$("cw_m").innerHTML = "Wallet wasn't detected!";console.log("Wallet wasn't detected!");provider = new ethers.providers.JsonRpcProvider(RPC_URL);DrefreshFarm();pantvl();return}
+	else if(//typeOf window.ethereum == Object &&Number(window.ethereum.chainId)
+		Number(window.ethereum.chainId)==CHAINID)
+	{
+		console.log("Recognized Ethereum Chain:", window.ethereum.chainId,CHAINID);
+		provider = new ethers.providers.Web3Provider(window.ethereum)
+		signer = provider.getSigner();
+		if(!(window.ethereum.selectedAddress==null)){console.log("Found old wallet:", window.ethereum.selectedAddress);DrefreshFarm();refreshFarm();cw();arf();guh();gubs()}
+	}
+	else //if(Number(window.ethereum.chainId)==CHAINID)
+	{
+		console.log("Couldn't find Ethereum Provider - ",CHAINID,window.ethereum.chainId)
+		if((typeof Number(window.ethereum.chainId) == "number")){$("cw_m").innerHTML = "Wrong network! Switch from " + Number(window.ethereum.chainId)+" to "+CHAINID}
+		provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+		signer = provider.getSigner()
+		$("connect").innerHTML=`Wallet not found.<br><br><button onclick="window.location.reload()" id="btn-connect">Retry?</button>`;
+		DrefreshFarm()
+	}
+	if( (Number(window.ethereum.chainId)!=null) &&(window.ethereum.chainId!=CHAINID))
+	{
+		$("cw_m").innerHTML = "Wrong network! Please Switch to "+CHAINID;provider = new ethers.providers.Web3Provider(window.ethereum);
+		DrefreshFarm();
+		pantvl();
+		await window.ethereum.request({
+    	method: "wallet_addEthereumChain",
+    	params: [{
+        	chainId: CHAINID,
+        	rpcUrls: [RPC_URL],
+        	chainName: RPC_URL.split('.')[1],
+        	nativeCurrency: {
+            	name: RPC_URL.split('.')[1],
+            	symbol: RPC_URL.split('.')[1],
+            	decimals: 18
+        	},
+        	blockExplorerUrls: [EXPLORE]
+    		}]
+		});
+		basetrip()
+	}
+	DrefreshFarm()
+	pantvl()
+}
+async function pantvl()
+{
+	tabi = [{"constant": true,"inputs": [],"name": "tvl","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}]
+	const tg = new ethers.Contract(tsca,tabi,provider)
+	let r = await tg.tvl()
+	$("pantvl").innerHTML = "$"+(Number(r._hex)/1e18).toLocaleString()
+}
+function fornum(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(2)+"Qt"}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(2)+"Qd"}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(2)+"Tn"}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(2)+"Bn"}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(2)+"Mn"}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(2)+"Th"}
+	else if(_n>1){n_=(_n/1e0).toFixed(2)+""}
+	return(n_);
+}
+ab1=
+[
+	{
+	"constant": true,
+	"inputs": [
+		{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+		},
+		{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+		}
+	],
+	"name": "allowance",
+	"outputs": [
+		{
+		"internalType": "uint256",
+		"name": "",
+		"type": "uint256"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": false,
+	"inputs": [
+		{
+		"internalType": "address",
+		"name": "spender",
+		"type": "address"
+		},
+		{
+		"internalType": "uint256",
+		"name": "value",
+		"type": "uint256"
+		}
+	],
+	"name": "approve",
+	"outputs": [
+		{
+		"internalType": "bool",
+		"name": "",
+		"type": "bool"
+		}
+	],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "guy",
+				"type": "address"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [
+		{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+		}
+	],
+	"name": "balanceOf",
+	"outputs": [
+		{
+		"internalType": "uint256",
+		"name": "",
+		"type": "uint256"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [],
+	"name": "decimals",
+	"outputs": [
+		{
+		"internalType": "uint8",
+		"name": "",
+		"type": "uint8"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [],
+	"name": "factory",
+	"outputs": [
+		{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [],
+	"name": "getReserves",
+	"outputs": [
+		{
+		"internalType": "uint112",
+		"name": "_reserve0",
+		"type": "uint112"
+		},
+		{
+		"internalType": "uint112",
+		"name": "_reserve1",
+		"type": "uint112"
+		},
+		{
+		"internalType": "uint32",
+		"name": "_blockTimestampLast",
+		"type": "uint32"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": false,
+	"inputs": [
+		{
+		"internalType": "address",
+		"name": "_token0",
+		"type": "address"
+		},
+		{
+		"internalType": "address",
+		"name": "_token1",
+		"type": "address"
+		}
+	],
+	"name": "initialize",
+	"outputs": [],
+	"payable": false,
+	"stateMutability": "nonpayable",
+	"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [],
+	"name": "symbol",
+	"outputs": [
+		{
+		"internalType": "string",
+		"name": "",
+		"type": "string"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+	"constant": true,
+	"inputs": [],
+	"name": "name",
+	"outputs": [
+		{
+		"internalType": "string",
+		"name": "",
+		"type": "string"
+		}
+	],
+	"payable": false,
+	"stateMutability": "view",
+	"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
+async function cw()
+{
+	let cs = await cw2(); cs?console.log("Good to Transact"):cw2()
+}
+async function cw2()
+{
+	if(!(window.ethereum)){$("cw_m").innerHTML="Metamask not detected! Trying a refresh";console.log("Metamask not found!");window.location.reload();return(0)}
+	if(!(Number(window.ethereum.chainId)==CHAINID)){$("cw_m").innerHTML="Wrong network detected! Please switch to chain ID", CHAINID, "and refresh this page.";return(0)}
+	if(typeof provider == "undefined"){$("cw_m").innerHTML="Provider not detected! Trying a refresh";console.log("Provider not found!");window.location.reload();return(0)}
+	/*
+	if(!
+		(isFinite(Number(accounts[0])))
+		|| (isFinite(Number(window.ethereum.selectedAddress)))
+	){console.log("NAAAAAAAAAAAAAAAAA");window.location.reload();}
+	*/
+
+	//004
+	window.ethereum
+	.request({ method: 'eth_requestAccounts' })
+	.then(r=>{console.log("004: Success:",r);})	//re-curse to end curse, maybe..
+	.catch((error) => {	console.error("004 - Failure", r, error); });
+
+
+	//005
+	const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+	if(Number(accounts[0])>0){console.log("005: Success - ", accounts)}
+	else{console.log("005: Failure", accounts)}
+
+
+	/*006
+	const en6 = await window.ethereum.enable()
+	if(Number(en6[0]) > 0){console.log("006 - Success",en6)}
+	else{console.log("006 - Failure", en6)}
+	*/
+
+
+	/*003
+	try {
+      console.log("attempting cw()")
+      const addresses = await provider.request({ method: "eth_requestAccounts" });
+      console.log("addresses:",addresses)
+    } catch (e) {
+      console.log("error in request", e);
+      window.location.reload(true);
+    }
+    */
+
+    //002
+    //try{await provider.send("eth_requestAccounts", []);console.log("CWE:",e);}//await window.ethereum.enable();
+	//catch(e){console.log("CWE:",e);window.location.reload(true)}
+	console.log("doing the paints")
+	$("cw").innerHTML= (window.ethereum.selectedAddress).substr(0,10) +"..."+(window.ethereum.selectedAddress).substr(34);
+	$("cw_m").innerHTML=""
+	$("connect").style.display="none";
+	$("switch").style.display="block";
+	farm_1_f_chappro()
+	//gubs();
+	return(1);
+}
+function fornum(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(2)+" Quintillion"}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(2)+" Quadrillion"}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(2)+" Trillion"}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(2)+" Billion"}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(2)+" Million"}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(2)+" Thousand"}
+	else if(_n>1){n_=(_n/1e0).toFixed(2)+""}
+	return(n_);
+}
+function arf(){	var xfr = setInterval(function()
+	{
+		console.log("refreshing farm stats", Date.now());//lpapr_sus_d()
+		;refreshFarm()
+	}, 15000);}
+
+abbrove=[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}];
+
+farabi=[{"type":"constructor","stateMutability":"nonpayable","payable":false,"inputs":[{"type":"address","name":"_owner","internalType":"address"},{"type":"address","name":"_stakingToken","internalType":"address"},{"type":"address","name":"_tg","internalType":"address"}]},{"type":"event","name":"OwnerChanged","inputs":[{"type":"address","name":"oldOwner","internalType":"address","indexed":false},{"type":"address","name":"newOwner","internalType":"address","indexed":false}],"anonymous":false},{"type":"event","name":"OwnerNominated","inputs":[{"type":"address","name":"newOwner","internalType":"address","indexed":false}],"anonymous":false},{"type":"event","name":"PauseChanged","inputs":[{"type":"bool","name":"isPaused","internalType":"bool","indexed":false}],"anonymous":false},{"type":"event","name":"Recovered","inputs":[{"type":"address","name":"token","internalType":"address","indexed":true},{"type":"uint256","name":"amount","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"event","name":"RewardAdded","inputs":[{"type":"address","name":"token","internalType":"address","indexed":true},{"type":"uint256","name":"reward","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"event","name":"RewardPaid","inputs":[{"type":"address","name":"user","internalType":"address","indexed":true},{"type":"address","name":"rewardsToken","internalType":"address","indexed":true},{"type":"uint256","name":"reward","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"event","name":"RewardsDurationUpdated","inputs":[{"type":"address","name":"token","internalType":"address","indexed":true},{"type":"uint256","name":"newDuration","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"event","name":"Staked","inputs":[{"type":"address","name":"user","internalType":"address","indexed":true},{"type":"uint256","name":"amount","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"event","name":"Withdrawn","inputs":[{"type":"address","name":"user","internalType":"address","indexed":true},{"type":"uint256","name":"amount","internalType":"uint256","indexed":false}],"anonymous":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"address"}],"name":"TvlGuru","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"bytes","name":"","internalType":"bytes"}],"name":"TvlPriceFeed","inputs":[{"type":"address","name":"","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"acceptOwnership","inputs":[],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"addReward","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"},{"type":"address","name":"_rewardsDistributor","internalType":"address"},{"type":"uint256","name":"_rewardsDuration","internalType":"uint256"},{"type":"bytes","name":"_TvlPriceFeed","internalType":"bytes"}],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"_apr","internalType":"uint256"}],"name":"apr","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"_apr","internalType":"uint256"}],"name":"apr","inputs":[{"type":"uint256","name":"i","internalType":"uint256"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256[]","name":"","internalType":"uint256[]"}],"name":"aprs","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"balanceOf","inputs":[{"type":"address","name":"account","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"earned","inputs":[{"type":"address","name":"account","internalType":"address"},{"type":"address","name":"_rewardsToken","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"exit","inputs":[],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"feePerMillion","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"address"}],"name":"feeTaker","inputs":[],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"getReward","inputs":[{"type":"address[]","name":"_rewardsTokens","internalType":"address[]"},{"type":"address","name":"_ben","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"getReward","inputs":[],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"getReward","inputs":[{"type":"address[]","name":"_rewardsTokens","internalType":"address[]"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"getReward","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"getRewardForDuration","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"lastPauseTime","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"lastTimeRewardApplicable","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"nominateNewOwner","inputs":[{"type":"address","name":"_owner","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"address"}],"name":"nominatedOwner","inputs":[],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"notifyRewardAmount","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"},{"type":"uint256","name":"reward","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"address"}],"name":"owner","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"bool","name":"","internalType":"bool"}],"name":"paused","inputs":[],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"recoverERC20","inputs":[{"type":"address","name":"tokenAddress","internalType":"address"},{"type":"uint256","name":"tokenAmount","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"rewardsDistributor","internalType":"address"},{"type":"uint256","name":"rewardsDuration","internalType":"uint256"},{"type":"uint256","name":"periodFinish","internalType":"uint256"},{"type":"uint256","name":"rewardRate","internalType":"uint256"},{"type":"uint256","name":"lastUpdateTime","internalType":"uint256"},{"type":"uint256","name":"rewardPerTokenStored","internalType":"uint256"}],"name":"rewardData","inputs":[{"type":"address","name":"","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"rewardPerToken","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"address"}],"name":"rewardTokens","inputs":[{"type":"uint256","name":"","internalType":"uint256"}],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"rewards","inputs":[{"type":"address","name":"","internalType":"address"},{"type":"address","name":"","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setFee","inputs":[{"type":"uint256","name":"_f","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setFeeTaker","inputs":[{"type":"address","name":"_f","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setPaused","inputs":[{"type":"bool","name":"_paused","internalType":"bool"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setRewardsDistributor","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"},{"type":"address","name":"_rewardsDistributor","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setRewardsDuration","inputs":[{"type":"address","name":"_rewardsToken","internalType":"address"},{"type":"uint256","name":"_rewardsDuration","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setTvlFeed","inputs":[{"type":"address","name":"_t","internalType":"address"},{"type":"bytes","name":"_d","internalType":"bytes"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setTvlFeed","inputs":[{"type":"address[]","name":"_t","internalType":"address[]"},{"type":"bytes[]","name":"_d","internalType":"bytes[]"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"setTvlGuru","inputs":[{"type":"address","name":"_tg","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"stake","inputs":[{"type":"uint256","name":"amount","internalType":"uint256"},{"type":"address","name":"_ben","internalType":"address"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"stake","inputs":[{"type":"uint256","name":"amount","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"stakeAll","inputs":[],"constant":false},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"address","name":"","internalType":"contract IERC20"}],"name":"stakingToken","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"totalSupply","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"_tvl","internalType":"uint256"}],"name":"tvl","inputs":[],"constant":true},{"type":"function","stateMutability":"view","payable":false,"outputs":[{"type":"uint256","name":"","internalType":"uint256"}],"name":"userRewardPerTokenPaid","inputs":[{"type":"address","name":"","internalType":"address"},{"type":"address","name":"","internalType":"address"}],"constant":true},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"withdraw","inputs":[{"type":"uint256","name":"amount","internalType":"uint256"}],"constant":false},{"type":"function","stateMutability":"nonpayable","payable":false,"outputs":[],"name":"withdrawAll","inputs":[],"constant":false}]
+
+function farm_1_f_approve()
+{
+	try
+	{
+		var conAdd = pairadd;
+		theCon = new ethers.Contract(pairadd, abbrove, signer);
+		theCon.approve(f_1_add, ethers.constants.MaxUint256).then(r => {console.log(r)}).then((c)=>{console.log(c);gs();});
+	}
+	catch(e){$("er").innerHTML=e;}
+}
+function farm_1_f_chappro()
+{
+	try
+	{
+		var conAdd = pairadd;
+		theCon = new ethers.Contract(conAdd, abbrove, provider);
+		theCon.allowance(window.ethereum.selectedAddress,f_1_add)
+		.then(r =>
+			{
+				console.log(r);
+				if(Number(r)>0)
+				{
+					$("farm_1_approved").value="Approved";
+					$("farm_1_approval").disabled=true;
+					$("farm_1_after").style.display="block";
+					$("f1app").style.display="none";
+				}
+				else
+				{
+					$("farm_1_approved").value="Not Approved";
+					$("farm_1_approval").disabled=false;
+					$("farm_1_after").style.display="none";
+					$("f1app").style.display="block";
+				}
+			}
+		);
+	}
+	catch(e){console.log(e)}
+}
+
+function farm_1_f_deposit()
+{
+	try
+	{
+		var conAdd = f_1_add;
+		theCon = new ethers.Contract(conAdd, ["function stake(uint)"], signer);
+		m=($("farm_1_input_deposit").value);m*=1e18;m-=m%1;m=m.toLocaleString("fullwide",{useGrouping:false})
+		theCon.stake(m).then(r => {console.log(r)}).then((c)=>{console.log(c);gs();});
+	}
+	catch(e){console.log(e)}
+}
+function gs(){console.log("gs lol");refreshFarm();gubs()}
+function farm_1_f_claim()
+{
+	try
+	{
+		var conAdd = f_1_add;
+		theCon = new ethers.Contract(conAdd, ["function getReward()"], signer);
+		theCon.getReward().then(r => {console.log(r)}).then((c)=>{console.log(c);gs();});
+	}
+	catch(e){console.log(e)}
+}
+
+function farm_1_f_withdraw()
+{
+	try
+	{
+		var conAdd = f_1_add;
+		theCon = new ethers.Contract(conAdd, ["function withdraw(uint)"], signer);
+		m=($("farm_1_input_withdraw").value);m*=1e18;m-=m%1;m=m.toLocaleString("fullwide",{useGrouping:false})
+		theCon.withdraw(m).then(r => {console.log(r)}).then((c)=>{console.log(c);gs();});
+	}
+	catch(e){console.log(e)}
+}
+
+function farm_1_f_exit()
+{
+	try
+	{
+		var conAdd = f_1_add;
+		theCon = new ethers.Contract(conAdd, ["function exit()"], signer);
+		theCon.exit().then(r => {console.log(r)}).then((c)=>{console.log(c);gs();});
+	}
+	catch(e){console.log(e)}
+}
+
+async function refreshFarm()
+{
+	try
+	{
+		farm_1_f_chappro();
+		gubs();
+
+		theCon = new ethers.Contract(f_1_add, farabi, provider);
+		theCon.earned(window.ethereum.selectedAddress, TEARNED[0])
+		.then(r =>{
+			$("farm_1_s_claim").value=Number(r)/1e18; //REWARD DECIMALS
+			$("farm_1_s_claim_e").value="Earned: "+(Number(r)/1e18); //REWARD DECIMALS
+			$("farm_3_i_re").innerHTML=(Number(r)/1e18).toFixed(6);
+		});//REWARD DECIMALS
+		theCon.balanceOf(window.ethereum.selectedAddress)
+		.then(r => {
+			$("farm_1_s_withdraw").innerHTML=Number(r)/1e18;
+			$("farm_3_i_ys").innerHTML=(Number(r)/1e18).toFixed(6);
+			$("farm_1_s_claim_s").value="Staked: "+(Number(r)/1e18)
+		});
+
+		the2 = new ethers.Contract(pairadd, ab1, provider);
+		the2.balanceOf(window.ethereum.selectedAddress).then(r => {$("farm_1_s_deposit").innerHTML=Number(r)/1e18});
+		const tv = await the2.balanceOf(f_1_add).then(r => {return(r)});
+
+		theCon = new ethers.Contract(f_1_add, ["function apr() public view returns (uint)", "function tvl() public view returns (uint)"], provider);
+		_aprtvl = await Promise.all([theCon.apr(), theCon.tvl()]);
+		$("farm_3_i_apr").innerHTML=(Number(_aprtvl[0])/1e18*100).toLocaleString() +"%"//;
+		$("farm_3_i_tvl").innerHTML="$" + (Number(_aprtvl[1])/1e18).toLocaleString()//;
+
+	}
+	catch(e){console.log(e);}
+}
+async function DrefreshFarm()
+{
+	try
+	{
+		theCon = new ethers.Contract(f_1_add, ["function apr() public view returns (uint)", "function tvl() public view returns (uint)"], provider);
+		_aprtvl = await Promise.all([theCon.apr(), theCon.tvl()]);
+		$("farm_3_i_apr").innerHTML=(Number(_aprtvl[0])/1e18*100).toLocaleString() +"%"//;
+		$("farm_3_i_tvl").innerHTML="$" + (Number(_aprtvl[1])/1e18).toLocaleString()//;
+		//theCon.periodFinish().then(r => {$("pf").innerHTML=new Date(Number(r) * 1000)});
+	}
+	catch(e){console.log(e);}
+}
+
+async function mint_mint() {
+	damt = ($("mint_amt").value * 1e18);
+	if(!isFinite(damt)){alert("Wrong input format!");return}
+	damt = BigInt($("mint_amt").value * 1e18);
+	sw=new ethers.Contract(SWKAVA, ["function deposit() payable"], signer);
+	tx=await sw.deposit({value:damt});
+	await tx.wait();
+	await gubs();
+}
+async function gubs() {
+	wech = new ethers.Contract(WKAVA, ab1, signer);
+	swech = new ethers.Contract(SWKAVA, ab1, signer);
+	///iech = new ethers.Contract(iKAVA, ab1, signer);
+	Promise.all([
+		provider.getBalance(window.ethereum.selectedAddress),
+		wech.balanceOf(window.ethereum.selectedAddress),
+		swech.balanceOf(window.ethereum.selectedAddress),
+		///iech.balanceOf(window.ethereum.selectedAddress),
+	]).then(r=>{
+		$("mint_bal_coin").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
+		$("mint_bal_wtoken").innerHTML = (Number(r[1])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
+		$("mint_bal_swtoken").innerHTML = (Number(r[2])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
+		///$("mint_bal_itoken").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
+	})
+}
+async function guh() {
+	theCon = new ethers.Contract(f_1_add, farabi, provider);
+	//theCon.periodFinish().then(r => {$("pf").innerHTML=new Date(Number(r) * 1000)});
+	if(window.ethereum.selectedAddress == null){$("farmhist").innerHTML="Wallet Not Connected!";return}
+	$("farmhist").innerHTML="";
+	totearn=0;
+	EGR="0xe2403640ba68fed3a2f88b7557551d1993f84b99bb10ff833f0cf8db0c5e0486";
+	EWD="0x7084f5476618d8e60b11ef0d7d3f06914655adb8793e28ff7f018d4c76d505d5";
+	EST="0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d";
+	LATEST = await provider.getBlockNumber()
+
+	for(logi=0;logi<=Math.floor((LATEST-BLOCK_0)/BLOCKTIME);logi++)
+	{
+		startLog = LATEST - (logi*10000) - 10000;
+		endLog = LATEST - (logi*10000);
+		L = await provider.getLogs({address:f_1_add,topics:[[EGR,EWD,EST],"0x000000000000000000000000"+window.ethereum.selectedAddress.substr(2)],toBlock:endLog,fromBlock:startLog});
+
+		for(i=L.length-1;i>=0;i--) {
+			if(L[i].topics[0]==EGR) {
+				$("farmhist").innerHTML += `
+					<tr class="elgr">
+						<td>${ (new Date( ((L[i].blockNumber-BLOCK_0)*BLOCKTIME + TIME_B0)*1e3 )).toLocaleString() }</td>
+						<td>Claim Reward</td>
+						<td>WKAVA</td>
+						<td>${Number(L[i].data)/10**decEARN}</td>
+						<td><a href="${EXPLORT+L[i].transactionHash}" target="blank">${L[i].transactionHash.substring(0,10)}</td>
+					</tr>
+				`
+				totearn+=Number(L[i].data)/10**decEARN
+				$("totearn").innerHTML = totearn;
+			}
+			if(L[i].topics[0]==EWD) {
+				$("farmhist").innerHTML += `
+					<tr class="elwd">
+						<td>${ (new Date( ((L[i].blockNumber-BLOCK_0)*BLOCKTIME + TIME_B0)*1e3 )).toLocaleString() }</td>
+						<td>Withdrawal</td>
+						<td>vaxLP</td>
+						<td>${Number(L[i].data)/10**DECIMAL}</td>
+						<td><a href="${EXPLORT+L[i].transactionHash}" target="blank">${L[i].transactionHash.substring(0,10)}</td>
+					</tr>
+				`
+			}
+			if(L[i].topics[0]==EST) {
+				$("farmhist").innerHTML += `
+					<tr class="elst">
+						<td>${ (new Date( ((L[i].blockNumber-BLOCK_0)*BLOCKTIME + TIME_B0)*1e3 )).toLocaleString() }</td>
+						<td>New Deposit</td>
+						<td>vaxLP</td>
+						<td>${Number(L[i].data)/10**DECIMAL}</td>
+						<td><a href="${EXPLORT+L[i].transactionHash}" target="blank">${L[i].transactionHash.substring(0,10)}</td>
+					</tr>
+				`
+			}
+		}
+
+	}
+
+}
+
+aapd=0;
+aapw=0;
+</script>
+</html>

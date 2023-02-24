@@ -184,7 +184,7 @@ td a{text-decoration: 2px underline dotted #f0f}
 				<span></span><span id="mint_bal_swtoken">0</span>
 				<span></span><span>SWKAVA</span><span></span>
 			</div>
-			<br><button style="font-size: 1em" id="refresh_mint_bal" onclick="gub_mint();guh();">↺ Reload Balances</button><br>
+			<br><button style="font-size: 1em" id="refresh_mint_bal" onclick="gubs();guh();">↺ Reload Balances</button><br>
 			<br><hr>
 		</div>
 		<br>
@@ -524,10 +524,13 @@ async function basetrip()
 }
 async function pantvl()
 {
+	/*
 	tabi = [{"constant": true,"inputs": [],"name": "tvl","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}]
 	const tg = new ethers.Contract(tsca,tabi,provider)
 	let r = await tg.tvl()
-	$("pantvl").innerHTML = "$"+(Number(r._hex)/1e18).toLocaleString()
+	*/
+	let r = (await (new ethers.Contract(SWTOKEN, ab1, signer) ).totalSupply())
+	$("pantvl").innerHTML = "$"+(Number(r._hex)/1e18).toLocaleString()+" KAVA"
 }
 function fornum(n,d)
 {
@@ -1027,15 +1030,15 @@ async function mint_mint() {
 	damt = ($("mint_amt").value * 1e18);
 	if(!isFinite(damt)){alert("Wrong input format!");return}
 	damt = BigInt($("mint_amt").value * 1e18);
-	sw=new ethers.Contract(SWKAVA, ["function deposit() payable"], signer);
+	sw=new ethers.Contract(SWTOKEN, ["function deposit() payable"], signer);
 	tx=await sw.deposit({value:damt});
 	await tx.wait();
 	await gubs();
 }
 async function gubs() {
-	wech = new ethers.Contract(WKAVA, ab1, signer);
-	swech = new ethers.Contract(SWKAVA, ab1, signer);
-	///iech = new ethers.Contract(iKAVA, ab1, signer);
+	wech = new ethers.Contract(WTOKEN, ab1, signer);
+	swech = new ethers.Contract(SWTOKEN, ab1, signer);
+	///iech = new ethers.Contract(iTOKEN, ab1, signer);
 	Promise.all([
 		provider.getBalance(window.ethereum.selectedAddress),
 		wech.balanceOf(window.ethereum.selectedAddress),

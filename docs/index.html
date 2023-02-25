@@ -203,7 +203,7 @@ Converting KAVA to SWKAVA is non-reversible.
 <br>All KAVA that are used to mint SWKAVA get locked permanently into Lockless Protocol for Staking with the best Validators.
 <br><br>
 To convert SWKAVA back into KAVA, anyone can Trade it easily on ABcDeFX.<br><br>
-<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button>Trade SWKAVA at ABcDeFx</button></a>
+<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0x9d9682577CA889c882412056669bd936894663fd" target="_blank"><button>Trade SWKAVA at ABcDeFx</button></a>
 </div>
 <br><br><br>
 <br><br><br>
@@ -213,7 +213,7 @@ To convert SWKAVA back into KAVA, anyone can Trade it easily on ABcDeFX.<br><br>
 <h1 align="center">Step 2.</h2>
 <h2 align="center">Add SWKAVA with KAVA to Liquidity</h2>
 To start earning Liquid Staking rewards from Lockless Protocol, add SWKAVA with KAVA to Liquidity at the ABcDeFx.<br><br>
-<a href="https://abcdefx.eliteness.network/#/add/NATIVE/0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button style="font-size:1.2em" >Add SWKAVA+KAVA Liquidity</button></a>
+<a href="https://abcdefx.eliteness.network/#/add/NATIVE/0x9d9682577CA889c882412056669bd936894663fd" target="_blank"><button style="font-size:1.2em" >Add SWKAVA+KAVA Liquidity</button></a>
 <br><br>
 By adding SWKAVA with KAVA to Liquidity at ABcDeFx, you will receive special "LP Tokens" with the symbol 'ABcDeFx.LP-SWKAVA/WKAVA'.<br>
 These LP tokens need to be staked at final Step 3. to start earning rewards!
@@ -301,9 +301,9 @@ Earnings will start on March 1st, 2023 when Round 0 ends and Round 1 begins. Val
 <br>
 <div align="center" class="advert" style="font-size:1.25em">
 Get SWKAVA
-<pre>0xDf486980Df72446a5efF76263eFb2Fa9391Be136</pre>
+<pre>0x9d9682577CA889c882412056669bd936894663fd</pre>
 <a href="#mint_div" target="_blank"><button>Mint SWKAVA Directly</button></a>
-<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0xDf486980Df72446a5efF76263eFb2Fa9391Be136" target="_blank"><button>Buy SWKAVA at ABcDeFx</button></a>
+<a href="https://abcdefx.eliteness.network/#/swap?outputCurrency=0x9d9682577CA889c882412056669bd936894663fd" target="_blank"><button>Buy SWKAVA at ABcDeFx</button></a>
 <br><br>SWKAVA is Lockless Staked-Wrapped Kava: a Liquid Staking token.
 <br>SWKAVA is the receipt token for permanently locking KAVA into Lockless Protocol.
 SWKAVA-KAVA Liquidity tokens can be Staked to earn Rewards from Kava Staking.
@@ -362,7 +362,7 @@ All SWKAVA are backed by atleast 1 KAVA, ensuring its hard peg. It trades at the
 <hr class="hhr">
 <h3>Important Addresses</h3>
 <h4>SWKAVA Token</h4>
-0xDf486980Df72446a5efF76263eFb2Fa9391Be136
+0x9d9682577CA889c882412056669bd936894663fd
 <br>Staked-Wrapped Echelon
 <br><br>
 <h4>Locker</h4>
@@ -450,7 +450,7 @@ BLOCK_0 = 3287000;
 BLOCKTIME = 7;//seconds per block
 f_1_add = "0xA254bFD74c38b26145b980162Fb1A49bc0a4f14b";
 pairadd = "0x42fba9c02d5f3dc5596fd77f54c91812403a9d62";
-TEARNED	= ["0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b","0xDf486980Df72446a5efF76263eFb2Fa9391Be136"];
+TEARNED	= ["0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b","0x9d9682577CA889c882412056669bd936894663fd"];
 RPC_URL = "https://evm.kava.io";
 CHAINID = 2222;
 DECIMAL = 18;
@@ -460,10 +460,10 @@ EXPLORT = EXPLORE + "tx/";
 EXPLORA = EXPLORE + "address/";
 tsca = "0x5c652a94c672f8f6d021417bb5ee75c322ecf1fc";
 COIN = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-SWTOKEN = "0xDf486980Df72446a5efF76263eFb2Fa9391Be136";
+SWTOKEN = "0x9d9682577CA889c882412056669bd936894663fd";
 WTOKEN = "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b";
 iTOKEN = "";
-SWECH = "0xDf486980Df72446a5efF76263eFb2Fa9391Be136";
+SWECH = "0x9d9682577CA889c882412056669bd936894663fd";
 WECH = "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b";
 iECH = "";
 
@@ -530,7 +530,7 @@ async function pantvl()
 	let r = await tg.tvl()
 	*/
 	let r = (await (new ethers.Contract(SWTOKEN, ab1, signer) ).totalSupply())
-	$("pantvl").innerHTML = "$"+(Number(r._hex)/1e18).toLocaleString()+" KAVA"
+	$("pantvl").innerHTML = ""+(Number(r._hex)/1e18).toLocaleString()+" KAVA"
 }
 function fornum(n,d)
 {
@@ -1036,19 +1036,19 @@ async function mint_mint() {
 	await gubs();
 }
 async function gubs() {
-	wech = new ethers.Contract(WTOKEN, ab1, signer);
-	swech = new ethers.Contract(SWTOKEN, ab1, signer);
-	///iech = new ethers.Contract(iTOKEN, ab1, signer);
+	wtoken = new ethers.Contract(WTOKEN, ab1, signer);
+	swtoken = new ethers.Contract(SWTOKEN, ab1, signer);
+	///itoken = new ethers.Contract(iTOKEN, ab1, signer);
 	Promise.all([
 		provider.getBalance(window.ethereum.selectedAddress),
-		wech.balanceOf(window.ethereum.selectedAddress),
-		swech.balanceOf(window.ethereum.selectedAddress),
-		///iech.balanceOf(window.ethereum.selectedAddress),
+		wtoken.balanceOf(window.ethereum.selectedAddress),
+		swtoken.balanceOf(window.ethereum.selectedAddress),
+		///itoken.balanceOf(window.ethereum.selectedAddress),
 	]).then(r=>{
-		$("mint_bal_coin").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
-		$("mint_bal_wtoken").innerHTML = (Number(r[1])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
-		$("mint_bal_swtoken").innerHTML = (Number(r[2])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
-		///$("mint_bal_itoken").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:0, maximumFractionDigits:0})
+		$("mint_bal_coin").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:4, maximumFractionDigits:4})
+		$("mint_bal_wtoken").innerHTML = (Number(r[1])/1e18).toLocaleString(undefined,{minimumFractionDigits:4, maximumFractionDigits:4})
+		$("mint_bal_swtoken").innerHTML = (Number(r[2])/1e18).toLocaleString(undefined,{minimumFractionDigits:4, maximumFractionDigits:4})
+		///$("mint_bal_itoken").innerHTML = (Number(r[0])/1e18).toLocaleString(undefined,{minimumFractionDigits:4, maximumFractionDigits:4})
 	})
 }
 async function guh() {
